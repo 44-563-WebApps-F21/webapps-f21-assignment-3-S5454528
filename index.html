@@ -61,5 +61,31 @@ The below table contains the Location and cost of the food/Drinks that I recomme
         <td> 4$ </td>
     </tr>
 </table>
+
+<hr>
+
+<h3>Code Display</h3>
+<h4>Convex Hull</h4>
+<blockquote> The convex hull of a set of points is defined as the smallest convex polygon, 
+    that encloses all of the points in the set. Convex means that the polygon has no corner 
+    that is bent inwards.</blockquote >
+
+<a href= https://medium.com/@pascal.sommer.ch/a-gentle-introduction-to-the-convex-hull-problem-62dfcabee90c > Source link </a>
+
+<pre>
+typedef int ftype;
+typedef complex<ftype> point;
+#define x real
+#define y imag
+
+ftype dot(point a, point b) {
+    return (conj(a) * b).x();
+}
+
+ftype cross(point a, point b) {
+    return (conj(a) * b).y();
+}
+</pre>
+
     </body>
 </html>
