@@ -79,7 +79,7 @@ typedef complex<ftype> point;
 #define y imag
 
 ftype dot(point a, point b) {
-    return (conj(a) * b).x();
+    return (conj(a) * b).x(k);
 }
 
 ftype cross(point a, point b) {
